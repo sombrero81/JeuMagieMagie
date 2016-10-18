@@ -16,5 +16,6 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface GameServiceCrud extends CrudRepository<Game, Long>{
     
-    public List<Game> findAllByOrderByTitreAsc (String t);
-}
+    
+//    public List<Game> findAllByOrderByIdAsc (long t); 
+} 

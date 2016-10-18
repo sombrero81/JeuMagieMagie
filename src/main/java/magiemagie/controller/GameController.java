@@ -23,7 +23,7 @@ public class GameController {
     @Autowired
     private GameServiceCrud service;
     
-    @RequestMapping(value={"/liste_games","/"},method=RequestMethod.GET)
+    @RequestMapping(value={"/liste_games"},method=RequestMethod.GET)
     public String lister (Model model){
         
         model.addAttribute("lesgames", service.findAll());
