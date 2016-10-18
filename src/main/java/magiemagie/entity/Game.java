@@ -6,19 +6,21 @@
 package magiemagie.entity;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 /**
  *
  * @author Ayo Boo
  */
 @Entity
-public class Player implements Serializable {
+public class Game implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -32,45 +34,35 @@ public class Player implements Serializable {
     public void setId(Long id) {
         this.id = id;
     }
-    private String pseudo;
-    
-    private String avatar;
 
-    public String getPseudo() {
-        return pseudo;
+    @OneToMany(mappedBy = "game")
+    private List<Player> players = new ArrayList<Player>();
+
+    public List<Player> getPlayers() {
+        return players;
     }
 
-    public void setPseudo(String pseudo) {
-        this.pseudo = pseudo;
+    public void setPlayers(List<Player> players) {
+        this.players = players;
+    }
+    
+    public enum Status {
+        standBy,
+        inProcess,
+        finished
+    }
+    
+    private Status statut;
+
+    public void setStatut(Status statut) {
+        this.statut = statut;
     }
 
-    public String getAvatar() {
-        return avatar;
+    public Status getStatut() {
+        return statut;
     }
-
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
-    }
+   
     
-    
-    
-            
-    @ManyToOne
-    @JoinColumn(name = "game_id")
-    private Game game;
-
-    public Game getGame() {
-        return game;
-    }
-
-    public void setGame(Game game) {
-        this.game = game;
-    }
-    
-    
-            
-            
-            
     @Override
     public int hashCode() {
         int hash = 0;
@@ -81,10 +73,10 @@ public class Player implements Serializable {
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Player)) {
+        if (!(object instanceof Game)) {
             return false;
         }
-        Player other = (Player) object;
+        Game other = (Game) object;
         if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
             return false;
         }
@@ -93,7 +85,7 @@ public class Player implements Serializable {
 
     @Override
     public String toString() {
-        return "magiemagie.entity.Player[ id=" + id + " ]";
+        return "magiemagie.entity.Game[ id=" + id + " ]";
     }
     
 }

@@ -3,6 +3,8 @@
   <persistence-unit name="PU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>magiemagie.entity.Player</class>
+    <class>magiemagie.entity.Game</class>
+    <class>magiemagie.entity.Card</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/sample"/>

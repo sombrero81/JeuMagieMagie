@@ -10,15 +10,13 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 
 /**
  *
  * @author Ayo Boo
  */
 @Entity
-public class Player implements Serializable {
+public class Card implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -32,45 +30,7 @@ public class Player implements Serializable {
     public void setId(Long id) {
         this.id = id;
     }
-    private String pseudo;
-    
-    private String avatar;
 
-    public String getPseudo() {
-        return pseudo;
-    }
-
-    public void setPseudo(String pseudo) {
-        this.pseudo = pseudo;
-    }
-
-    public String getAvatar() {
-        return avatar;
-    }
-
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
-    }
-    
-    
-    
-            
-    @ManyToOne
-    @JoinColumn(name = "game_id")
-    private Game game;
-
-    public Game getGame() {
-        return game;
-    }
-
-    public void setGame(Game game) {
-        this.game = game;
-    }
-    
-    
-            
-            
-            
     @Override
     public int hashCode() {
         int hash = 0;
@@ -81,10 +41,10 @@ public class Player implements Serializable {
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Player)) {
+        if (!(object instanceof Card)) {
             return false;
         }
-        Player other = (Player) object;
+        Card other = (Card) object;
         if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
             return false;
         }
@@ -93,7 +53,7 @@ public class Player implements Serializable {
 
     @Override
     public String toString() {
-        return "magiemagie.entity.Player[ id=" + id + " ]";
+        return "magiemagie.entity.Card[ id=" + id + " ]";
     }
     
 }
