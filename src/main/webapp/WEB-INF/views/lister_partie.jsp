@@ -3,8 +3,10 @@
     Created on : 18 oct. 2016, 16:16:05
     Author     : admin
 --%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,6 +14,23 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>!! Liste des parties !!</h1>
+        
+        <br>
+        
+        <br>
+        
+        <div>
+            <c:forEach items="${lesgames}" var="ungame">
+
+                iteration :
+                ${ungame.id}
+                
+                
+                
+                
+                <br>
+            </c:forEach> 
+        
     </body>
 </html>
