@@ -258,176 +258,6 @@
 									"model": {
 										"$ref": "AAAAAAFX17gZNIbzwvw="
 									},
-									"subViews": [
-										{
-											"_type": "UMLOperationView",
-											"_id": "AAAAAAFX17lW84cwXGo=",
-											"_parent": {
-												"$ref": "AAAAAAFX17gZOIb8fuo="
-											},
-											"model": {
-												"$ref": "AAAAAAFX17lW14ct90Q="
-											},
-											"visible": true,
-											"enabled": true,
-											"lineColor": "#000000",
-											"fillColor": "#ffffff",
-											"fontColor": "#000000",
-											"font": "Arial;16;0",
-											"showShadow": true,
-											"containerChangeable": false,
-											"containerExtending": false,
-											"left": 149,
-											"top": 173,
-											"width": 222,
-											"height": 16,
-											"autoResize": false,
-											"underline": false,
-											"text": "+ListAvaillableGames()",
-											"horizontalAlignment": 0,
-											"verticalAlignment": 5
-										},
-										{
-											"_type": "UMLOperationView",
-											"_id": "AAAAAAFX17oHy4f3pOo=",
-											"_parent": {
-												"$ref": "AAAAAAFX17gZOIb8fuo="
-											},
-											"model": {
-												"$ref": "AAAAAAFX17oHr4f0BLY="
-											},
-											"visible": true,
-											"enabled": true,
-											"lineColor": "#000000",
-											"fillColor": "#ffffff",
-											"fontColor": "#000000",
-											"font": "Arial;16;0",
-											"showShadow": true,
-											"containerChangeable": false,
-											"containerExtending": false,
-											"left": 149,
-											"top": 191,
-											"width": 222,
-											"height": 16,
-											"autoResize": false,
-											"underline": false,
-											"text": "+JoinGame()",
-											"horizontalAlignment": 0,
-											"verticalAlignment": 5
-										},
-										{
-											"_type": "UMLOperationView",
-											"_id": "AAAAAAFX17rSSohh/NY=",
-											"_parent": {
-												"$ref": "AAAAAAFX17gZOIb8fuo="
-											},
-											"model": {
-												"$ref": "AAAAAAFX17rSLoheZqA="
-											},
-											"visible": true,
-											"enabled": true,
-											"lineColor": "#000000",
-											"fillColor": "#ffffff",
-											"fontColor": "#000000",
-											"font": "Arial;16;0",
-											"showShadow": true,
-											"containerChangeable": false,
-											"containerExtending": false,
-											"left": 149,
-											"top": 209,
-											"width": 222,
-											"height": 16,
-											"autoResize": false,
-											"underline": false,
-											"text": "+StartGame()",
-											"horizontalAlignment": 0,
-											"verticalAlignment": 5
-										},
-										{
-											"_type": "UMLOperationView",
-											"_id": "AAAAAAFX170rmIv5RgU=",
-											"_parent": {
-												"$ref": "AAAAAAFX17gZOIb8fuo="
-											},
-											"model": {
-												"$ref": "AAAAAAFX170rgIv2/Sc="
-											},
-											"visible": true,
-											"enabled": true,
-											"lineColor": "#000000",
-											"fillColor": "#ffffff",
-											"fontColor": "#000000",
-											"font": "Arial;16;0",
-											"showShadow": true,
-											"containerChangeable": false,
-											"containerExtending": false,
-											"left": 149,
-											"top": 227,
-											"width": 222,
-											"height": 16,
-											"autoResize": false,
-											"underline": false,
-											"text": "+DisplayBattlefield()",
-											"horizontalAlignment": 0,
-											"verticalAlignment": 5
-										},
-										{
-											"_type": "UMLOperationView",
-											"_id": "AAAAAAFX173HyozA7t4=",
-											"_parent": {
-												"$ref": "AAAAAAFX17gZOIb8fuo="
-											},
-											"model": {
-												"$ref": "AAAAAAFX173HmYy9VcU="
-											},
-											"visible": true,
-											"enabled": true,
-											"lineColor": "#000000",
-											"fillColor": "#ffffff",
-											"fontColor": "#000000",
-											"font": "Arial;16;0",
-											"showShadow": true,
-											"containerChangeable": false,
-											"containerExtending": false,
-											"left": 149,
-											"top": 245,
-											"width": 222,
-											"height": 16,
-											"autoResize": false,
-											"underline": false,
-											"text": "+CastSpell()",
-											"horizontalAlignment": 0,
-											"verticalAlignment": 5
-										},
-										{
-											"_type": "UMLOperationView",
-											"_id": "AAAAAAFX174LOIzIs80=",
-											"_parent": {
-												"$ref": "AAAAAAFX17gZOIb8fuo="
-											},
-											"model": {
-												"$ref": "AAAAAAFX174LHYzFDlU="
-											},
-											"visible": true,
-											"enabled": true,
-											"lineColor": "#000000",
-											"fillColor": "#ffffff",
-											"fontColor": "#000000",
-											"font": "Arial;16;0",
-											"showShadow": true,
-											"containerChangeable": false,
-											"containerExtending": false,
-											"left": 149,
-											"top": 263,
-											"width": 222,
-											"height": 16,
-											"autoResize": false,
-											"underline": false,
-											"text": "+PasserTour()",
-											"horizontalAlignment": 0,
-											"verticalAlignment": 5
-										}
-									],
 									"visible": true,
 									"enabled": true,
 									"lineColor": "#000000",
@@ -440,7 +270,7 @@
 									"left": 144,
 									"top": 168,
 									"width": 232,
-									"height": 116,
+									"height": 10,
 									"autoResize": false
 								},
 								{
@@ -770,92 +600,6 @@
 									"model": {
 										"$ref": "AAAAAAFX179dFI5NVbo="
 									},
-									"subViews": [
-										{
-											"_type": "UMLOperationView",
-											"_id": "AAAAAAFX18IfoZBih8Y=",
-											"_parent": {
-												"$ref": "AAAAAAFX179dGI5W4l8="
-											},
-											"model": {
-												"$ref": "AAAAAAFX18IfhZBftWA="
-											},
-											"visible": true,
-											"enabled": true,
-											"lineColor": "#000000",
-											"fillColor": "#ffffff",
-											"fontColor": "#000000",
-											"font": "Arial;16;0",
-											"showShadow": true,
-											"containerChangeable": false,
-											"containerExtending": false,
-											"left": 813,
-											"top": 165,
-											"width": 238,
-											"height": 16,
-											"autoResize": false,
-											"underline": false,
-											"text": "+StartGame()",
-											"horizontalAlignment": 0,
-											"verticalAlignment": 5
-										},
-										{
-											"_type": "UMLOperationView",
-											"_id": "AAAAAAFX18L2hpDzQXc=",
-											"_parent": {
-												"$ref": "AAAAAAFX179dGI5W4l8="
-											},
-											"model": {
-												"$ref": "AAAAAAFX18L2XpDwNjg="
-											},
-											"visible": true,
-											"enabled": true,
-											"lineColor": "#000000",
-											"fillColor": "#ffffff",
-											"fontColor": "#000000",
-											"font": "Arial;16;0",
-											"showShadow": true,
-											"containerChangeable": false,
-											"containerExtending": false,
-											"left": 813,
-											"top": 183,
-											"width": 238,
-											"height": 16,
-											"autoResize": false,
-											"underline": false,
-											"text": "+CheckCond()",
-											"horizontalAlignment": 0,
-											"verticalAlignment": 5
-										},
-										{
-											"_type": "UMLOperationView",
-											"_id": "AAAAAAFX18O/kpEw1WE=",
-											"_parent": {
-												"$ref": "AAAAAAFX179dGI5W4l8="
-											},
-											"model": {
-												"$ref": "AAAAAAFX18O/dJEtlZM="
-											},
-											"visible": true,
-											"enabled": true,
-											"lineColor": "#000000",
-											"fillColor": "#ffffff",
-											"fontColor": "#000000",
-											"font": "Arial;16;0",
-											"showShadow": true,
-											"containerChangeable": false,
-											"containerExtending": false,
-											"left": 813,
-											"top": 201,
-											"width": 238,
-											"height": 16,
-											"autoResize": false,
-											"underline": false,
-											"text": "+EndGame()",
-											"horizontalAlignment": 0,
-											"verticalAlignment": 5
-										}
-									],
 									"visible": true,
 									"enabled": true,
 									"lineColor": "#000000",
@@ -868,7 +612,7 @@
 									"left": 808,
 									"top": 160,
 									"width": 248,
-									"height": 62,
+									"height": 10,
 									"autoResize": false
 								},
 								{
@@ -3036,92 +2780,6 @@
 							"isID": false
 						}
 					],
-					"operations": [
-						{
-							"_type": "UMLOperation",
-							"_id": "AAAAAAFX17lW14ct90Q=",
-							"_parent": {
-								"$ref": "AAAAAAFX17gZNIbzwvw="
-							},
-							"name": "ListAvaillableGames",
-							"visibility": "public",
-							"isStatic": false,
-							"isLeaf": false,
-							"concurrency": "sequential",
-							"isQuery": false,
-							"isAbstract": false
-						},
-						{
-							"_type": "UMLOperation",
-							"_id": "AAAAAAFX17oHr4f0BLY=",
-							"_parent": {
-								"$ref": "AAAAAAFX17gZNIbzwvw="
-							},
-							"name": "JoinGame",
-							"visibility": "public",
-							"isStatic": false,
-							"isLeaf": false,
-							"concurrency": "sequential",
-							"isQuery": false,
-							"isAbstract": false
-						},
-						{
-							"_type": "UMLOperation",
-							"_id": "AAAAAAFX17rSLoheZqA=",
-							"_parent": {
-								"$ref": "AAAAAAFX17gZNIbzwvw="
-							},
-							"name": "StartGame",
-							"visibility": "public",
-							"isStatic": false,
-							"isLeaf": false,
-							"concurrency": "sequential",
-							"isQuery": false,
-							"isAbstract": false
-						},
-						{
-							"_type": "UMLOperation",
-							"_id": "AAAAAAFX170rgIv2/Sc=",
-							"_parent": {
-								"$ref": "AAAAAAFX17gZNIbzwvw="
-							},
-							"name": "DisplayBattlefield",
-							"visibility": "public",
-							"isStatic": false,
-							"isLeaf": false,
-							"concurrency": "sequential",
-							"isQuery": false,
-							"isAbstract": false
-						},
-						{
-							"_type": "UMLOperation",
-							"_id": "AAAAAAFX173HmYy9VcU=",
-							"_parent": {
-								"$ref": "AAAAAAFX17gZNIbzwvw="
-							},
-							"name": "CastSpell",
-							"visibility": "public",
-							"isStatic": false,
-							"isLeaf": false,
-							"concurrency": "sequential",
-							"isQuery": false,
-							"isAbstract": false
-						},
-						{
-							"_type": "UMLOperation",
-							"_id": "AAAAAAFX174LHYzFDlU=",
-							"_parent": {
-								"$ref": "AAAAAAFX17gZNIbzwvw="
-							},
-							"name": "PasserTour",
-							"visibility": "public",
-							"isStatic": false,
-							"isLeaf": false,
-							"concurrency": "sequential",
-							"isQuery": false,
-							"isAbstract": false
-						}
-					],
 					"isAbstract": false,
 					"isFinalSpecialization": false,
 					"isLeaf": false,
@@ -3169,50 +2827,6 @@
 							"isDerived": false,
 							"aggregation": "none",
 							"isID": false
-						}
-					],
-					"operations": [
-						{
-							"_type": "UMLOperation",
-							"_id": "AAAAAAFX18IfhZBftWA=",
-							"_parent": {
-								"$ref": "AAAAAAFX179dFI5NVbo="
-							},
-							"name": "StartGame",
-							"visibility": "public",
-							"isStatic": false,
-							"isLeaf": false,
-							"concurrency": "sequential",
-							"isQuery": false,
-							"isAbstract": false
-						},
-						{
-							"_type": "UMLOperation",
-							"_id": "AAAAAAFX18L2XpDwNjg=",
-							"_parent": {
-								"$ref": "AAAAAAFX179dFI5NVbo="
-							},
-							"name": "CheckCond",
-							"visibility": "public",
-							"isStatic": false,
-							"isLeaf": false,
-							"concurrency": "sequential",
-							"isQuery": false,
-							"isAbstract": false
-						},
-						{
-							"_type": "UMLOperation",
-							"_id": "AAAAAAFX18O/dJEtlZM=",
-							"_parent": {
-								"$ref": "AAAAAAFX179dFI5NVbo="
-							},
-							"name": "EndGame",
-							"visibility": "public",
-							"isStatic": false,
-							"isLeaf": false,
-							"concurrency": "sequential",
-							"isQuery": false,
-							"isAbstract": false
 						}
 					],
 					"isAbstract": false,

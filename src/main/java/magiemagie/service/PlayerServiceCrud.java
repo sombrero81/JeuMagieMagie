@@ -5,7 +5,7 @@
  */
 package magiemagie.service;
 
-import magiemagie.entity.Joueur;
+import magiemagie.entity.Player;
 import org.springframework.data.repository.CrudRepository;
 
 
@@ -13,7 +13,7 @@ import org.springframework.data.repository.CrudRepository;
  *
  * @author Ayo Boo
  */
-public interface JoueurServiceCrud extends CrudRepository<Joueur,Long> {
+public interface PlayerServiceCrud extends CrudRepository<Player,Long> {
     
     
 }
