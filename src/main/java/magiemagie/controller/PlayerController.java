@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import magiemagie.service.PlayerServiceCrud;
+import org.springframework.ui.Model;
 
 /**
  *
@@ -22,13 +23,23 @@ public class PlayerController {
     @Autowired
     private PlayerServiceCrud service;
     
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String home(){
+    @RequestMapping(value = "/join", method = RequestMethod.GET)
+    public String joinGET(Model model) {
         
         
         service.findAll();
         
-        return "home.jsp";
+        return "join.jsp";
+    }
+    
+    
+    @RequestMapping(value = "/join", method = RequestMethod.POST)
+    public String joinPOST(Model model) {
+        
+        
+        service.findAll();
+        
+        return "redirect:/game.jsp";
     }
     
 }
