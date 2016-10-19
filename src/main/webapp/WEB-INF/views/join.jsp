@@ -18,7 +18,7 @@
         <h1>magie magie!</h1>
         
         <div>
-            <form:form action="/">
+            <form:form action="/wait">
                 <label>Veuillez saisir votre pseudo</label>
                 <input name="pseudo" type="text" />
                 

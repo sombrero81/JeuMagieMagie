@@ -17,7 +17,7 @@ import javax.persistence.Id;
 @Entity
 public class Avatar {
     
-    @Id
+    @Id 
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     
