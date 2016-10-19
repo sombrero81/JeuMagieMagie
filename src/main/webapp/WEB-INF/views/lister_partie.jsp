@@ -23,10 +23,10 @@
         <div>
             <c:forEach items="${lesgames}" var="ungame">
 
-                iteration :
+                Partie N° :
                 ${ungame.id}
                 
-                
+                <a href="joindre_partie/${ungame.id}">Joindre Partie</a>
                 
                 
                 <br>

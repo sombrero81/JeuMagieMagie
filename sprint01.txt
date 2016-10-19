@@ -1,0 +1,15 @@
+home.jsp
+- lister les parties disponibles
+- liens hypertexte sur parties dispo
+
+join.jsp
+-choisir avatar
+-rentrer un pseudo
+-bouton de validation vers le wait.jsp method post
+
+wait.jsp
+- page d'attente
+- afficher la liste des joueurs en attente
+- affiche le pseudo et l'avatar du joeur en attente
+- affiche les regles de la partie
+- affiche la liste des autres joueurs
