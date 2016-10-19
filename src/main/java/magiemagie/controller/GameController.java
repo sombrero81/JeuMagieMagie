@@ -25,7 +25,7 @@ public class GameController {
     private GameServiceCrud service;
     
     //lister les parties
-    @RequestMapping(value={"/liste_games"},method=RequestMethod.GET)
+    @RequestMapping(value={"/liste_games", "/"},method=RequestMethod.GET)
     public String lister (Model model){
         
         model.addAttribute("lesgames", service.findAll());

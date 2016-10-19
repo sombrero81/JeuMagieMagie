@@ -22,14 +22,21 @@
                 <label>Veuillez saisir votre pseudo</label>
                 <input name="pseudo" type="text" />
                 
+                <br/>
+                <br/>
+                <br/>
+                
                 <label>Veuillez choisir votre avatar</label>
                 
-                <c:forEach items="${avats}" var="avat">
+                <c:forEach items="${avatars}" var="avatar">
                     
-                    <img src="${avat.src}" />
-                    <form:radiobutton path="$(avat.id)" value="$(avat.url)" /> $(avat.name)
+                    <img src="${avatar.src}" />
+                    <form:radiobutton path="$(avatar.id)" value="$(avatar.url)" /> $(avatar.name)
                     <br/>
-                </c:forEach>                
+                </c:forEach>
+                
+                <br/>
+                <br/>
                 
                 <input name="join" type="submit" value="Rejoindre la partie !!!" />
             </form:form>

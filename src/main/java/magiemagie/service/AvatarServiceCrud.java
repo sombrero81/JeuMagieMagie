@@ -13,6 +13,7 @@ import org.springframework.data.repository.CrudRepository;
  *
  * @author admin
  */
-public interface AvatarServiceCrud extends CrudRepository<Avatar, Long>{
+public interface AvatarServiceCrud extends CrudRepository<Avatar, Long> {
+
 //    public List<Avatar> findAllByIdAsc();
 }

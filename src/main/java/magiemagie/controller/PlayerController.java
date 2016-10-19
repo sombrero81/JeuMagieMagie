@@ -23,23 +23,9 @@ public class PlayerController {
     @Autowired
     private PlayerServiceCrud service;
     
-    @RequestMapping(value = "/join", method = RequestMethod.GET)
-    public String joinGET(Model model) {
-        
-        
-        service.findAll();
-        
-        return "join.jsp";
-    }
     
     
-    @RequestMapping(value = "/join", method = RequestMethod.POST)
-    public String joinPOST(Model model) {
-        
-        
-        service.findAll();
-        
-        return "redirect:/game.jsp";
-    }
+    
+   
     
 }
