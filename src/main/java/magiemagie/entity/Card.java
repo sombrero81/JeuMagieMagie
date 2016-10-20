@@ -10,6 +10,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 /**
  *
@@ -22,6 +24,30 @@ public class Card implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    
+    @ManyToOne
+    @JoinColumn(name="player_id")
+    private Player player;
+    
+    private String typecarte;
+
+    public String getTypecarte() {
+        return typecarte;
+    }
+
+    public void setTypecarte(String typecarte) {
+        this.typecarte = typecarte;
+    }
+
+    public Player getPlayer() {
+        return player;
+    }
+
+    public void setPlayer(Player player) {
+        this.player = player;
+    }
+    
+    
 
     public Long getId() {
         return id;
