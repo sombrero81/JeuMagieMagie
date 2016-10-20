@@ -12,8 +12,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="CSS/style.css" rel="stylesheet" type="text/css"/>  
         <title>Joindre la partie</title>
+        <link href="<spring:url value="/CSS/style.css"/>" rel="stylesheet" type="text/css"/> 
     </head>
     <body>
         <h1> Magie Magie </h1>

@@ -17,13 +17,9 @@
     <body>
         <h1> Magie Magie </h1>
         <br>
-        
         <h1> -- Liste des parties -- </h1>
-        
         <br>
-        
         <br>
-        
         <div>
             <c:forEach items="${lesgames}" var="ungame">
 

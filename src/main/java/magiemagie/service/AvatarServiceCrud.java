@@ -15,5 +15,5 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface AvatarServiceCrud extends CrudRepository<Avatar, Long> {
 
-//    public List<Avatar> findAllByIdAsc();
+    public List<Avatar> findAllById(long f);
 }

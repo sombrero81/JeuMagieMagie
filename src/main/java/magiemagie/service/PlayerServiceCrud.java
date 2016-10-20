@@ -5,6 +5,7 @@
  */
 package magiemagie.service;
 
+import java.util.List;
 import magiemagie.entity.Player;
 import org.springframework.data.repository.CrudRepository;
 
@@ -15,5 +16,6 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface PlayerServiceCrud extends CrudRepository<Player,Long> {
     
+    public List<Player> findAllByGameId(long id);
     
 }

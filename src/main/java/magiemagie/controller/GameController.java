@@ -5,6 +5,7 @@
  */
 package magiemagie.controller;
 
+import javax.servlet.http.HttpSession;
 import magiemagie.entity.Avatar;
 import magiemagie.entity.Game;
 import magiemagie.entity.Player;
@@ -38,9 +39,11 @@ public class GameController {
     
     //joindre partie
     @RequestMapping(value="/join/{idGame}",method =RequestMethod.GET)
-    public String joinGET(@PathVariable("idGame") long id,Model model){
+    public String joinGET(@PathVariable("idGame") long id,Model model, HttpSession session){
      
         Game game = service.findOne(id);
+        
+        session.setAttribute("currentGameId", id);
                 
      return "join.jsp";
      

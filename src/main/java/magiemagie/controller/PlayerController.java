@@ -16,16 +16,10 @@ import org.springframework.ui.Model;
  *
  * @author Ayo Boo
  */
-
 @Controller
 public class PlayerController {
-    
+
     @Autowired
-    private PlayerServiceCrud service;
-    
-    
-    
-    
-   
-    
+    private PlayerServiceCrud pservice;
+
 }

@@ -1,9 +1,9 @@
 body {
-color:orange;
-font-size: 30px;
-background-color:black;
-background-image:url( "IMG/magic.jpg"  );
-background-repeat: no-repeat;
-text-align: center
+    color:orange;
+    font-size: 30px;
+    background-color:black;
+    background-image:url( "IMG/magic.jpg"  );
+    background-repeat: no-repeat;
+    text-align: center
 
 }
