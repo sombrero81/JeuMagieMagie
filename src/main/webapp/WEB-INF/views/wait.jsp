@@ -22,6 +22,9 @@
         <c:set var="route">
             <spring:url value="/wait"/>
         </c:set>
+        
+        <input name="boutonGame" type="submit" value="Commencez la partie !" />
+        
         <br>
         <h1> -- Liste des joueurs -- </h1>
         <br>
