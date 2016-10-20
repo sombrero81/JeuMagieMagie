@@ -5,6 +5,9 @@
  */
 package magiemagie.controller;
 
+import magiemagie.entity.Avatar;
+import magiemagie.entity.Game;
+import magiemagie.entity.Player;
 import magiemagie.service.GameServiceCrud;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -34,11 +37,13 @@ public class GameController {
     }
     
     //joindre partie
-    @RequestMapping(value="/joindre_partie/{val}",method =RequestMethod.GET)
-    public String joindre(@PathVariable("idGame") long id,Model model){
-        
+    @RequestMapping(value="/join/{idGame}",method =RequestMethod.GET)
+    public String joinGET(@PathVariable("idGame") long id,Model model){
      
+        Game game = service.findOne(id);
+                
      return "join.jsp";
+     
     }
     
     

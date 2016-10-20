@@ -7,42 +7,48 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="CSS/style.css" rel="stylesheet" type="text/css"/>  
         <title>Joindre la partie</title>
     </head>
     <body>
-        <h1>magie magie!</h1>
-        
+        <h1> Magie Magie </h1>
+        <br>
         <div>
-            <form:form action="/wait">
+            <c:set var="route">
+                <spring:url value="/join"/>
+            </c:set>
+
+            <form:form action="${route}" modelAttribute="avatars">
+
                 <label>Veuillez saisir votre pseudo</label>
                 <input name="pseudo" type="text" />
-                
-                <br/>
-                <br/>
-                <br/>
-                
+
+                <br>
+                <br>
+                <br>
+
                 <label>Veuillez choisir votre avatar</label>
-                
+
                 <c:forEach items="${avatars}" var="avatar">
-                    
-                    <img src="${avatar.src}" />
+
+<!--<img src="${avatar.src}" />-->
                     <form:radiobutton path="$(avatar.id)" value="$(avatar.url)" /> $(avatar.name)
                     <br/>
                 </c:forEach>
-                
-                <br/>
-                <br/>
-                
+
+                <br>
+                <br>
+
                 <input name="join" type="submit" value="Rejoindre la partie !!!" />
             </form:form>
-                
+
         </div>
-            
-        
+
+
     </body>
 </html>

@@ -12,10 +12,13 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
-        <title>JSP Page</title>
+        <title>HOME Page</title>
     </head>
     <body>
-        <h1>!! Liste des parties !!</h1>
+        <h1> Magie Magie </h1>
+        <br>
+        
+        <h1> -- Liste des parties -- </h1>
         
         <br>
         
@@ -27,8 +30,7 @@
                 Partie N° :
                 ${ungame.id}
                 
-                <a href="joindre_partie/${ungame.id}">Joindre Partie</a>
-                
+                <a href="<spring:url value="/"/>join/${ungame.id}">Joindre Partie</a>
                 
                 <br>
             </c:forEach> 
