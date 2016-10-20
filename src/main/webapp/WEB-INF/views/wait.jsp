@@ -18,10 +18,10 @@
     <body>
         <h1> Magie Magie </h1>
         <br>
-        <div>
-            <c:set var="route">
-                <spring:url value="/wait"/>
-            </c:set>
+
+        <c:set var="route">
+            <spring:url value="/wait"/>
+        </c:set>
         <br>
         <h1> -- Liste des joueurs -- </h1>
         <br>
@@ -30,11 +30,11 @@
             <c:forEach items="${players}" var="player">
 
                 Pseudo : ${player.pseudo}
-                
-                
+
+
                 <br>
             </c:forEach> 
-            
-            
+
+        </div>
     </body>
 </html>

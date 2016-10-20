@@ -7,3 +7,10 @@ body {
     text-align: center
 
 }
+div {
+    
+    color:blueviolet;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px
+}

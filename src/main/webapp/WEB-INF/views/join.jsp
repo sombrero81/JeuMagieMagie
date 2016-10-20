@@ -36,7 +36,7 @@
 
                 <c:forEach items="${avatars}" var="avatar">
 
-<!--<img src="${avatar.src}" />-->
+                    <img src="${avatar.src}" />
                     <form:radiobutton path="$(avatar.id)" value="$(avatar.url)" /> $(avatar.name)
                     <br/>
                 </c:forEach>

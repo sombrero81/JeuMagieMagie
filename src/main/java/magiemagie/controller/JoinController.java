@@ -5,9 +5,12 @@
  */
 package magiemagie.controller;
 
+import javax.persistence.EntityManager;
 import javax.servlet.http.HttpSession;
+import magiemagie.entity.Game;
 import magiemagie.entity.Player;
 import magiemagie.service.AvatarServiceCrud;
+import magiemagie.service.GameServiceCrud;
 import magiemagie.service.PlayerServiceCrud;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -28,6 +31,9 @@ public class JoinController {
     @Autowired 
     private PlayerServiceCrud playerService;
     
+    @Autowired
+    private GameServiceCrud gameService;
+    
     
     @RequestMapping(value = "/wait", method = RequestMethod.GET)
     public String waitGET(Model model, HttpSession session){
@@ -46,15 +52,22 @@ public class JoinController {
     
     
    @RequestMapping(value = "/join", method = RequestMethod.POST)
-   public String joinPOST(@ModelAttribute ("avatars")Player player) {
+   public String joinPOST(@ModelAttribute ("avatars")Player player, HttpSession session) {
         
        // Persiste player en base
        playerService.save(player);
-       
+    
        // Associe player à une partie ( en base )
+       long idGame = (long) session.getAttribute("currentGameId");
+       Game game = gameService.findOne(idGame);
        
+       game.getPlayers().add(player);
+       player.setGame(game);
        
-        return "redirect:/wait";
+       gameService.save(game);
+       playerService.save(player);
+       
+       return "redirect:/wait";
     }
     
     
