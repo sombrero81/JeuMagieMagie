@@ -31,6 +31,14 @@ public class Player implements Serializable {
     @OneToMany(mappedBy = "player")
     private Collection<Card> cards = new ArrayList<>();
 
+    public Collection<Card> getCards() {
+        return cards;
+    }
+
+    public void setCards(Collection<Card> cards) {
+        this.cards = cards;
+    }
+    
 
     public Collection<Card> getCards() {
         return cards;
