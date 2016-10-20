@@ -1,16 +1,12 @@
 body {
     color:orange;
     font-size: 30px;
-    background-color:black;
-    background-image:url( "IMG/magic.jpg"  );
-    background-repeat: no-repeat center center fixed;
     text-align: center;
-
+    background: url( "IMG/magic.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
 }
 div {
 

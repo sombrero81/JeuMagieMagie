@@ -31,10 +31,6 @@ public class Player implements Serializable {
     @OneToMany(mappedBy = "player")
     private Collection<Card> cards = new ArrayList<>();
 
-    public Long getId() {
-        return id;
-    }
-    
 
     public Collection<Card> getCards() {
         return cards;
@@ -43,6 +39,16 @@ public class Player implements Serializable {
     public void setCards(Collection<Card> cards) {
         this.cards = cards;
     }
+    
+
+
+    public Long getId() {
+        return id;
+    }
+    
+
+
+    
     
     
 
@@ -85,7 +91,7 @@ public class Player implements Serializable {
     }
     
     
-            
+          
             
             
     @Override
