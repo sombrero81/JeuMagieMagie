@@ -30,6 +30,7 @@ public class Card implements Serializable {
     @JoinColumn(name="player_id")
     private Player player;
     
+    
     private String typecarte;
 
     public String getTypecarte() {

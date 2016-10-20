@@ -18,14 +18,15 @@
     <body>
         <h1> Magie Magie </h1>
         <br>
+        <input name="boutonGame" type="submit" value="commencer la partie !!!" />
+        <br>
 
         <c:set var="route">
             <spring:url value="/wait"/>
         </c:set>
         <br>
         <h1> -- Liste des joueurs -- </h1>
-        <br>
-        <br>
+        
         <div>
             <c:forEach items="${players}" var="player">
 

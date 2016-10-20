@@ -29,11 +29,22 @@ public class Player implements Serializable {
     private Long id;
     
     @OneToMany(mappedBy = "player")
-    private Collection<Card>cards = new ArrayList<>();
+    private Collection<Card> cards = new ArrayList<>();
 
     public Long getId() {
         return id;
     }
+    
+
+    public Collection<Card> getCards() {
+        return cards;
+    }
+
+    public void setCards(Collection<Card> cards) {
+        this.cards = cards;
+    }
+    
+    
 
     public void setId(Long id) {
         this.id = id;

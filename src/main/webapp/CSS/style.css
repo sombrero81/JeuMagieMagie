@@ -3,12 +3,17 @@ body {
     font-size: 30px;
     background-color:black;
     background-image:url( "IMG/magic.jpg"  );
-    background-repeat: no-repeat;
-    text-align: center
+    background-repeat: no-repeat center center fixed;
+    text-align: center;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
 }
 div {
-    
+
     color:blueviolet;
     font-weight: bold;
     text-align: center;
