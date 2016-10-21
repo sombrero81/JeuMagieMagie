@@ -17,8 +17,7 @@
     </head>
     <body>
         <h1> Magie Magie </h1>
-        <br>
-        <input name="boutonGame" type="submit" value="commencer la partie !!!" />
+        
         <br>
 
         <c:set var="route">

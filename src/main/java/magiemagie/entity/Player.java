@@ -40,13 +40,9 @@ public class Player implements Serializable {
     }
     
 
-    public Collection<Card> getCards() {
-        return cards;
-    }
+   
 
-    public void setCards(Collection<Card> cards) {
-        this.cards = cards;
-    }
+    
     
 
 
