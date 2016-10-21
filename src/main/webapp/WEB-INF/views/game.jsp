@@ -14,6 +14,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Game Page</title>
         <link href="<spring:url value="/CSS/style.css"/>" rel="stylesheet" type="text/css"/> 
+        <script src="<spring:url value="/JS/jquery-3.1.1.js"/>" type="text/javascript"></script>
+        <script src="<spring:url value="/JS/game.js"/>" type="text/javascript"></script>
     </head>
     <body>
         <h1> Magie Magie </h1>
@@ -29,8 +31,7 @@
         <br>
         <input name="boutonPasser" type="submit" value="passer son tour" />
         <br>
-        <h1> -- Liste des cartes -- </h1>
-
+        <div id="listeCartes"></div>
         <div>
             <c:forEach items="${cards}" var="card">
 

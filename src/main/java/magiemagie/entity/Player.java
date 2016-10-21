@@ -38,16 +38,11 @@ public class Player implements Serializable {
     public void setCards(Collection<Card> cards) {
         this.cards = cards;
     }
-<<<<<<< HEAD
-=======
     
 
    
 
     
-    
-
->>>>>>> origin/master
 
     public Long getId() {
         return id;

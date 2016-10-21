@@ -6,7 +6,11 @@
 package magiemagie.entity;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -20,6 +24,13 @@ import javax.persistence.ManyToOne;
 @Entity
 public class Card implements Serializable {
     
+    public enum TypeCard {
+        BAVE_CRAPEAU,
+        CORNE_LICORNE,
+        SANG_DE_VIERGE,
+        LAPIS_LAZULI,
+        AILE_DE_CHAUVE_SOURIS
+    }
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -30,15 +41,15 @@ public class Card implements Serializable {
     @JoinColumn(name="player_id")
     private Player player;
     
-    
-    private String typecarte;
+    @Enumerated(EnumType.STRING)
+    private TypeCard typeCard;
 
-    public String getTypecarte() {
-        return typecarte;
+    public TypeCard getTypeCard() {
+        return typeCard;
     }
 
-    public void setTypecarte(String typecarte) {
-        this.typecarte = typecarte;
+    public void setTypeCard(TypeCard typeCard) {
+        this.typeCard = typeCard;
     }
 
     public Player getPlayer() {

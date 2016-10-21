@@ -59,6 +59,9 @@ public class JoinController {
        // Persiste player en base
        playerService.save(player);
     
+       // Place joueur en session
+       session.setAttribute("currentPlayerId", player.getId());
+       
        // Associe player à une partie ( en base )
        long idGame = (long) session.getAttribute("currentGameId");
        Game game = gameService.findOne(idGame);
