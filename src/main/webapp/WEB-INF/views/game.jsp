@@ -12,29 +12,29 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Waiting Page</title>
-        <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+        <title>Game Page</title>
+        <link href="<spring:url value="/CSS/style.css"/>" rel="stylesheet" type="text/css"/> 
     </head>
     <body>
         <h1> Magie Magie </h1>
         <br>
-      
+
         <br>
 
         <c:set var="route">
-            <spring:url value="/wait"/>
+            <spring:url value="/game"/>
         </c:set>
-        
-        <a href="<spring:url value="/"/>game/">Commencez la partie !</a>
-        
+
+        <input name="boutonLancer" type="submit" value="lancer un sort" />
         <br>
-        <h1> -- Liste des joueurs -- </h1>
-        
+        <input name="boutonPasser" type="submit" value="passer son tour" />
+        <br>
+        <h1> -- Liste des cartes -- </h1>
+
         <div>
-            <c:forEach items="${players}" var="player">
+            <c:forEach items="${cards}" var="card">
 
-                Pseudo : ${player.pseudo}
-
+                Carte disponible : ${card.typecarte}
 
                 <br>
             </c:forEach> 

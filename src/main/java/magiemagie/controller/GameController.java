@@ -5,6 +5,7 @@
  */
 package magiemagie.controller;
 
+import java.lang.reflect.Method;
 import javax.servlet.http.HttpSession;
 import magiemagie.entity.Avatar;
 import magiemagie.entity.Game;
@@ -47,7 +48,23 @@ public class GameController {
                 
      return "join.jsp";
      
+     //jouer à une partie
+       
+        
     }
+    @Autowired
+    private GameServiceCrud Gameservice;
     
+    
+    @RequestMapping(value="/game/",method =RequestMethod.GET)
+    public String gameGET(Model model ){
+     
+//        Game game = Gameservice.findOne(id);
+//        
+//        session.setAttribute("currentGameId", id);
+                
+     return "game.jsp";
+     
+    }
     
 }
