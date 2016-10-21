@@ -27,7 +27,7 @@ public class Player implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    
+
     @OneToMany(mappedBy = "player")
     private Collection<Card> cards = new ArrayList<>();
 
@@ -38,23 +38,16 @@ public class Player implements Serializable {
     public void setCards(Collection<Card> cards) {
         this.cards = cards;
     }
-    
 
     public Long getId() {
         return id;
     }
-    
-
-
-    
-    
-    
 
     public void setId(Long id) {
         this.id = id;
     }
     private String pseudo;
-    
+
     private String avatar;
 
     public String getPseudo() {
@@ -72,10 +65,7 @@ public class Player implements Serializable {
     public void setAvatar(String avatar) {
         this.avatar = avatar;
     }
-    
-    
-    
-            
+
     @ManyToOne
     @JoinColumn(name = "game_id")
     private Game game;
@@ -87,11 +77,7 @@ public class Player implements Serializable {
     public void setGame(Game game) {
         this.game = game;
     }
-    
-    
-          
-            
-            
+
     @Override
     public int hashCode() {
         int hash = 0;
@@ -116,5 +102,5 @@ public class Player implements Serializable {
     public String toString() {
         return "magiemagie.entity.Player[ id=" + id + " ]";
     }
-    
+
 }

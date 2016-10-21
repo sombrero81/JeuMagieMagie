@@ -29,6 +29,8 @@ public class GameController {
     @Autowired
     private GameServiceCrud service;
     
+    
+    
     //lister les parties
     @RequestMapping(value={"/liste_games", "/"},method=RequestMethod.GET)
     public String lister (Model model){

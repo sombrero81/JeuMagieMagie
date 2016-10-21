@@ -35,6 +35,8 @@ public class JoinController {
     private GameServiceCrud gameService;
     
     
+    
+    
     @RequestMapping(value = "/wait", method = RequestMethod.GET)
     public String waitGET(Model model, HttpSession session){
         

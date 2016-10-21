@@ -1,0 +1,17 @@
+body {
+    color:orange;
+    font-size: 30px;
+    text-align: center;
+    background: url( "IMG/wow-legion.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+div {
+
+    color:blueviolet;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px
+}
