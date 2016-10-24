@@ -17,14 +17,14 @@ import magiemagie.entity.Game;
 import magiemagie.entity.Player;
 import magiemagie.entity.SortDTO;
 import magiemagie.service.CardService;
-import magiemagie.service.GameServiceCrud;
-import magiemagie.service.PlayerServiceCrud;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import magiemagie.service.GameDAO;
+import magiemagie.service.PlayerDAO;
 
 /**
  *
@@ -37,10 +37,10 @@ public class GameController {
     private CardService cardService;
 
     @Autowired
-    private GameServiceCrud service;
+    private GameDAO service;
 
     @Autowired
-    private PlayerServiceCrud playerDao;
+    private PlayerDAO playerDao;
 
     //lister les parties
     @RequestMapping(value = {"/liste_games", "/"}, method = RequestMethod.GET)
@@ -78,7 +78,7 @@ public class GameController {
     }
 
     @Autowired
-    private GameServiceCrud Gameservice;
+    private GameDAO Gameservice;
 
     /**
      * Démarre partie

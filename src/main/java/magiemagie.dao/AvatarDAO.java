@@ -6,20 +6,14 @@
 package magiemagie.service;
 
 import java.util.List;
-import magiemagie.entity.Game;
+import magiemagie.entity.Avatar;
 import org.springframework.data.repository.CrudRepository;
 
 /**
  *
  * @author admin
  */
-public interface GameServiceCrud extends CrudRepository<Game, Long> {
-    
-    public List<Game> findAllByStatutOrderByIdAsc (long t); 
-    
-    public Long countByStatut (Game.Status s);
-    
-    
-} 
+public interface AvatarDAO extends CrudRepository<Avatar, Long> {
 
-
+    public List<Avatar> findAllById(long f);
+}

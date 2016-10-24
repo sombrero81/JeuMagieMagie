@@ -19,7 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class CardService {
     
     @Autowired
-    private PlayerServiceCrud playerDAO;
+    private PlayerDAO playerDAO;
     
     /**
      * Pioche une nouvelle carte au hasard et l'affecte au joueur.

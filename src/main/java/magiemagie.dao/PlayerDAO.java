@@ -15,7 +15,7 @@ import org.springframework.data.repository.CrudRepository;
  *
  * @author Ayo Boo
  */
-public interface PlayerServiceCrud extends CrudRepository<Player,Long> {
+public interface PlayerDAO extends CrudRepository<Player,Long> {
     
     public List<Player> findAllByGameId(long id);
     

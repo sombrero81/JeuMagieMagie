@@ -18,7 +18,7 @@ import org.springframework.stereotype.Service;
 public class GameService {
     
     @Autowired
-    private GameServiceCrud gameServiceCrud;
+    private GameDAO gameServiceCrud;
     
     
     

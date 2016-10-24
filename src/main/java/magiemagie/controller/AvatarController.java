@@ -5,10 +5,10 @@
  */
 package magiemagie.controller;
 
-import magiemagie.service.AvatarServiceCrud;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import magiemagie.service.AvatarDAO;
 
 /**
  *
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AvatarController {
     
     @Autowired
-    private AvatarServiceCrud service;
+    private AvatarDAO service;
     
 //    @RequestMapping(value = "/")
     

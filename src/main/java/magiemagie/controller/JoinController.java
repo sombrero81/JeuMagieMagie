@@ -9,15 +9,15 @@ import javax.persistence.EntityManager;
 import javax.servlet.http.HttpSession;
 import magiemagie.entity.Game;
 import magiemagie.entity.Player;
-import magiemagie.service.AvatarServiceCrud;
-import magiemagie.service.GameServiceCrud;
-import magiemagie.service.PlayerServiceCrud;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import magiemagie.service.AvatarDAO;
+import magiemagie.service.GameDAO;
+import magiemagie.service.PlayerDAO;
 
 /**
  *
@@ -26,13 +26,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class JoinController {
     @Autowired
-    private AvatarServiceCrud service;
+    private AvatarDAO service;
     
     @Autowired 
-    private PlayerServiceCrud playerService;
+    private PlayerDAO playerService;
     
     @Autowired
-    private GameServiceCrud gameService;
+    private GameDAO gameService;
     
     
     
