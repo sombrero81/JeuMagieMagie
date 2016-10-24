@@ -15,6 +15,7 @@ import magiemagie.entity.Avatar;
 import magiemagie.entity.Card;
 import magiemagie.entity.Game;
 import magiemagie.entity.Player;
+import magiemagie.entity.SortDTO;
 import magiemagie.service.CardService;
 import magiemagie.service.GameServiceCrud;
 import magiemagie.service.PlayerServiceCrud;
@@ -107,9 +108,15 @@ public class GameController {
         
         // Détermine le 1er joueur
         
+        // liste des joueurs 
+        model.addAttribute("victimes", playerDao.findAll());
+        model.addAttribute("sorts", Game.TypeSort.values());
+        model.addAttribute("dto", new SortDTO());
+        
                 
         return "game.jsp";
      
     }
+    
     
 }
