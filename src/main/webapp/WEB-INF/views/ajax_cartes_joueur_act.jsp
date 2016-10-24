@@ -7,6 +7,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+
 <c:forEach items="${cartes}" var="carte">
     <img class="carte" src="<spring:url value="/Images/"/>${carte.typeCard}.png" alt="${carte.typeCard}"/>
 </c:forEach>

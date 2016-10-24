@@ -20,3 +20,8 @@ carte{
     width: 150px;
     height: 200px;
 }
+
+img
+{
+max-width: 150px;
+}
