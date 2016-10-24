@@ -28,27 +28,26 @@
         </c:set>
         <form:form modelAttribute="dto">
             Joueur Cible : 
-            <form:select items="victimes" itemLabel="pseudo" itemValue="id" path="idVictime"/>
+            <form:select items="${victimes}" itemLabel="pseudo" itemValue="id" path="idVictime"/>
               
             Sort :
             <form:select path="typeSort">
-                <c:forEach items="sorts" var="sort">
+                <c:forEach items="${sorts}" var="sort">
                     <form:option value="${sort}"/>
                 </c:forEach>
             </form:select>
-            <input name="boutonLancer" type="submit" value="lancer un sort" />
+            <br>
+            <input name="boutonLancer" type="submit" value="Lancer Un Sort" />
         </form:form>
         
         <br>
-        <input name="boutonPasser" type="submit" value="passer son tour" />
-        <br>
+        <input name="boutonPasser" type="submit" value="Passer Son Tour" />
         <div id="listeCartes"></div>
         <div>
             <c:forEach items="${cards}" var="card">
 
-                Carte disponible : ${card.typecarte}
+                Cartes Disponibles : ${card.typecarte}
 
-                <br>
             </c:forEach> 
 
         </div>
