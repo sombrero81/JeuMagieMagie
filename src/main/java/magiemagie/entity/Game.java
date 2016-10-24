@@ -48,6 +48,14 @@ public class Game implements Serializable {
         this.players = players;
     }
     
+    public enum TypeSort{
+        INVISIBILITE,
+        FILTRE_D_AMOUR,
+        HYPNOSE,
+        DIVINATION,
+        SOMMEIL_PROFOND,
+    }
+    
     public enum Status {
         STANDBY,
         IN_PROCESS,

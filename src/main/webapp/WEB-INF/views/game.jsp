@@ -26,8 +26,19 @@
         <c:set var="route">
             <spring:url value="/game"/>
         </c:set>
-
-        <input name="boutonLancer" type="submit" value="lancer un sort" />
+        <form:form modelAttribute="dto">
+            Joueur Cible : 
+            <form:select items="victimes" itemLabel="pseudo" itemValue="id" path="idVictime"/>
+              
+            Sort :
+            <form:select path="typeSort">
+                <c:forEach items="sorts" var="sort">
+                    <form:option value="${sort}"/>
+                </c:forEach>
+            </form:select>
+            <input name="boutonLancer" type="submit" value="lancer un sort" />
+        </form:form>
+        
         <br>
         <input name="boutonPasser" type="submit" value="passer son tour" />
         <br>

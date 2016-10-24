@@ -5,7 +5,6 @@
  */
 package magiemagie.service;
 
-import java.io.Serializable;
 import java.util.List;
 import magiemagie.entity.Game;
 import org.springframework.data.repository.CrudRepository;
