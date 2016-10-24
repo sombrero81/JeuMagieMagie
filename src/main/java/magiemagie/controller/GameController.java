@@ -101,7 +101,7 @@ public class GameController {
         for(Player p : playerDao.findAllByGameId( gameId )){
             
             for(int i=0;i<7;i++){
-                cardService.pioche(playerId);
+                cardService.pioche(p.getId());
             }
         }
         

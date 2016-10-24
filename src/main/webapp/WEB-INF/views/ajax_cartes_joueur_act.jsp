@@ -8,6 +8,5 @@
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <c:forEach items="${cartes}" var="carte">
-    <img src="<spring:url value="/"/>${carte.typeCard}" alt="${carte.typeCard}"/>
-    &n&nbsp;&n&nbsp;&n&nbsp;
+    <img class="carte" src="<spring:url value="/Images/"/>${carte.typeCard}.png" alt="${carte.typeCard}"/>
 </c:forEach>
